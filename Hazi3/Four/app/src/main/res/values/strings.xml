@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ConstraintLayoutHazi</string>
+    <string name="textview">New Product Form</string>
+    <string name="txtfcode">Product Code: </string>
+    <string name="txtfname">Product Name: </string>
+    <string name="txtfprice">Product Price: </string>
+    <string name="btnadd">Add Product</string>
+    <string name="btncancel">Cancel</string>
+</resources>

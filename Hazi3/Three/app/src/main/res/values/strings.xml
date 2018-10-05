@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TableLayoutHazi</string>
+    <string name="textview1">New Product Form</string>
+    <string name="prodcode">Product Code: </string>
+    <string name="prodname">Product Name: </string>
+    <string name="prodprice">Product Price: </string>
+    <string name="btn1add">Add Product</string>
+    <string name="btn2cancel">Cancel</string>
+</resources>
