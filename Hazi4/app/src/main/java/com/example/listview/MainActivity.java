@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.chf,
             R.drawable.dkk,
             R.drawable.huf};
-    String[] buyArray = {"4,4100", "3,9750", "6,1250", "2,9600", "3,0950", "4,2300", "0,5850", "0,0136"};
-    String[] sellArray = {"4,5500", "4,1450", "6,3550", "3,0600", "3,2650", "4,3300", "0,6150", "0,0146"};
+    Double[] buyArray = {4.4100, 3.9750, 6.1250, 2.9600, 3.0950, 4.2300, 0.5850, 0.0136};
+    Double[] sellArray = {4.5500, 4.1450, 6.3550, 3.0600, 3.2650, 4.3300, 0.6150, 0.0146};
 
     ListView listView;
 
@@ -45,12 +45,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
                 Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                Bundle extras = new Bundle();
-                String currency = infoArray[position];
-                String price = buyArray[position];
-                extras.putString("info", currency);
-                extras.putString("price", price);
-                intent.putExtras(extras);
+
+                intent.putExtra("info",infoArray[position]);
+                intent.putExtra("price",buyArray[position]);
                 startActivity(intent);
             }
         });

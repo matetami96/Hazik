@@ -18,11 +18,11 @@ public class CustomListAdapter extends ArrayAdapter {
 
     private final String[] infoArray;
 
-    private final String[] buyArray;
+    private final Double[] buyArray;
 
-    private final String[] sellArray;
+    private final Double[] sellArray;
 
-    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] infoArrayParam, Integer[] imageIDArrayParam, String[] buyArrayParam, String[] sellArrayParam){
+    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] infoArrayParam, Integer[] imageIDArrayParam, Double[] buyArrayParam, Double[] sellArrayParam){
 
         super(context, R.layout.listview_row, nameArrayParam);
         this.context=context;
@@ -45,8 +45,8 @@ public class CustomListAdapter extends ArrayAdapter {
 
         nameTextField.setText(nameArray[position]);
         currencyTextField.setText(infoArray[position]);
-        number1TextField.setText(buyArray[position]);
-        number2TextField.setText(sellArray[position]);
+        number1TextField.setText(Double.toString(buyArray[position]));
+        number2TextField.setText(Double.toString(sellArray[position]));
         imageView.setImageResource(imageIDarray[position]);
         return rowView;
     }

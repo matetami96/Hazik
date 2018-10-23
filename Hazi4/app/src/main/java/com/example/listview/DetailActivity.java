@@ -11,13 +11,11 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
-        String info = extras.getString("info");
-        String price = extras.getString("price");
+        String info = getIntent().getStringExtra("info");
+        Double price = getIntent().getDoubleExtra("price", 0);
         TextView tv1 = (TextView)findViewById(R.id.textView7);
         TextView tv2 = (TextView)findViewById(R.id.textView8);
         tv1.setText(info);
-        tv2.setText(price);
+        tv2.setText(price.toString());
     }
 }
