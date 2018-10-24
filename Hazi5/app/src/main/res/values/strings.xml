@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hazi5</string>
+    <string name="color1">Zöld</string>
+    <string name="color2">Piros</string>
+    <string name="color3">Sárga</string>
+    <string name="rendez">Rendez</string>
+    <string name="torol">Torol</string>
+</resources>
