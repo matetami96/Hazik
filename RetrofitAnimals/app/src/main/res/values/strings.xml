@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RetrofitAnimals</string>
+    <string name="btnget">Get</string>
+    <string name="btngetall">Get All</string>
+    <string name="btnsave">Save</string>
+    <string name="btnupdate">Update</string>
+    <string name="btndelete">Delete</string>
+    <string name="crud">Get,Delete,Update Student with Id: </string>
+    <string name="id">Id:</string>
+    <string name="nev">Nev:</string>
+    <string name="faj">Faj:</string>
+    <string name="kor">Kor:</string>
+    <string name="crud2">Add a new Animal or Update one:</string>
+    <string name="btngob">Go Back</string>
+</resources>

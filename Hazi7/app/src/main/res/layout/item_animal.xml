@@ -25,7 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_profile_height"
                 android:layout_weight="1"
-                android:scaleType="centerCrop" />
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
 
             <RelativeLayout
                 android:layout_width="357dp"
